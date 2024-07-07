@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_keydetails_keydetails",
+  "info": {
+    "displayName": "keydetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "map": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::google-maps.location-picker"
+    },
+    "details": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

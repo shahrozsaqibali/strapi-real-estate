@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project_name": {
+      "type": "string",
+      "required": true
+    },
+    "project_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "mappedBy": "projects"
+    },
+    "developers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::developer.developer",
+      "mappedBy": "projects"
+    },
+    "tag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tag.tag",
+      "inversedBy": "projects"
+    },
+    "highlight": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::highlight.highlight",
+      "inversedBy": "projects"
+    },
+    "occupancy": {
+      "type": "string",
+      "required": true
+    },
+    "keydetail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keydetails.keydetails",
+      "required": true
+    },
+    "buyingreason": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buyingreason.buyingreason"
+    },
+    "projectassets": {
+      "type": "component",
+      "repeatable": false,
+      "component": "projectassets.project-assets"
+    },
+    "imageslideshow": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "furtherdetail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "furtherdetails.furtherdetails"
+    },
+    "propertytype": {
+      "type": "enumeration",
+      "enum": [
+        "Bungalows",
+        "Commercial",
+        "Residential",
+        "Condo Towns"
+      ],
+      "required": false
+    }
+  }
+}

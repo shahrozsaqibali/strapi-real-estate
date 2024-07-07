@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_projectassets_project_assets",
+  "info": {
+    "displayName": "ProjectAssets"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "assets": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

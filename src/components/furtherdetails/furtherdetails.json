@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_furtherdetails_furtherdetails",
+  "info": {
+    "displayName": "furtherdetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "details": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

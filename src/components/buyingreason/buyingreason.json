@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_buyingreason_buyingreasons",
+  "info": {
+    "displayName": "buyingreason",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "details": {
+      "type": "blocks"
+    }
+  }
+}
