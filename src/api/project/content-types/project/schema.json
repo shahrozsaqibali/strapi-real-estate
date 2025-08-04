@@ -56,7 +56,7 @@
       "type": "component",
       "repeatable": false,
       "component": "keydetails.keydetails",
-      "required": true
+      "required": false
     },
     "buyingreason": {
       "type": "component",

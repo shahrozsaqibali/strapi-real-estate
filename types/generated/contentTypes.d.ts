@@ -995,8 +995,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::highlight.highlight'
     >;
     occupancy: Attribute.String & Attribute.Required;
-    keydetail: Attribute.Component<'keydetails.keydetails'> &
-      Attribute.Required;
+    keydetail: Attribute.Component<'keydetails.keydetails'>;
     buyingreason: Attribute.Component<'buyingreason.buyingreason'>;
     projectassets: Attribute.Component<'projectassets.project-assets'>;
     imageslideshow: Attribute.Media;
